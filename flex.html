@@ -68,6 +68,7 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
+			justify-content:space-evenly;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
@@ -82,6 +83,7 @@ Description : Flex Layouts.
         .news-item { padding: 10px; }
         .row { 
 			display: flex;
+			flex-wrap: wrap;
 		}
         
 
@@ -90,18 +92,18 @@ Description : Flex Layouts.
 			.large { 
 				/*I need some CSS codes.*/
 				
-				flex-grow: 10;
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				flex-grow: 7;
+				width: 70%;
 				
 				
 			}
 			.small { 
 				/*I need some CSS codes.*/
 				
-				flex-grow: 3;
+				width: 30%;
 			 }       
         }
 
@@ -118,15 +120,15 @@ Description : Flex Layouts.
 			 .large { 
 				/*I need some CSS codes.*/
 				
-				flex-grow: 10;
+				width: 100%;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
-				flex-grow: 6;
+				width: 60%;
 			}
 			.small { 
 				/*I need some CSS codes.*/
-				flex-grow: 4;
+				width: 40%;
 			 }       
             /*I need some CSS codes.*/
         }
