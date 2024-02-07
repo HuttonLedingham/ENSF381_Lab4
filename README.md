@@ -4,8 +4,8 @@
 - Practice using flex to layout the page
 - Crating a ReadMe file
 ## Team Members
-|Name|
-|----|
+|Names|
+|-----|
 |Hutton Ledingham|
 |Isaac Jacob|
 ## Screenshots
