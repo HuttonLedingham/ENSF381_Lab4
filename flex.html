@@ -2,8 +2,8 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Isaac Jacob, 
+Submission  : Feb 07, 2024
 Description : Flex Layouts.
 =========================================================
 -->
@@ -18,7 +18,6 @@ Description : Flex Layouts.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
 		div {
 			border: 1px dashed gray;	
 		}
@@ -73,6 +72,7 @@ Description : Flex Layouts.
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
+			display: flex;
 		}
         .main { 
 			padding: 15px; 
@@ -81,7 +81,7 @@ Description : Flex Layouts.
         
         .news-item { padding: 10px; }
         .row { 
-			/*I need some CSS codes.*/
+			display: flex;
 		}
         
 
@@ -89,22 +89,45 @@ Description : Flex Layouts.
             .menu { width: 150px; }     
 			.large { 
 				/*I need some CSS codes.*/
+				
+				flex-grow: 10;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				flex-grow: 7;
+				
+				
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				
+				flex-grow: 3;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
 				/*I need some CSS codes.*/
+				display:block;
+
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
-			 }            
+				flex-direction: row;
+			 }          
+			 .large { 
+				/*I need some CSS codes.*/
+				
+				flex-grow: 10;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				flex-grow: 6;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				flex-grow: 4;
+			 }       
             /*I need some CSS codes.*/
         }
 
@@ -112,6 +135,8 @@ Description : Flex Layouts.
             .news-item header h1 { font-size: 18px; }
             .medium, .small { 
 				/*I need some CSS codes.*/
+				align-self:normal;
+				width: 100%;
 			 }
         }
     </style>
@@ -170,7 +195,7 @@ Description : Flex Layouts.
 					<!-- Medium news item -->
 					<div class="medium news-item">
 						<header>
-							<h1>Your Name Takes a Historic Spacewalk Near the ISS</h1>
+							<h1>Isaac Jacob Takes a Historic Spacewalk Near the ISS</h1>
 						</header>
 						<img src="images/medium.jpg" alt="Medium Image">
 						<article>
